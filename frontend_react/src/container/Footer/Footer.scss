@@ -1,0 +1,175 @@
+.app__footer {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+.head-text {
+    margin-bottom:1rem;
+}
+  .app__footer-container {
+      display:flex;
+      flex-direction: row;
+    //   flex-wrap: wrap;
+      width:100%;
+      flex:1
+  }
+
+  .map-wrap {
+    background: rgba(8, 253, 216, 0.1);
+    background-color: green;
+    width: 60%;
+    height: 100% ;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+}
+  
+  .leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .app__footer-cards {
+    width: 40%;
+    display: flex;
+    // justify-content: space-evenly;
+    // background-color: blue;
+    // align-items: center;
+    flex-wrap: wrap;
+    margin: 0em 0.5rem 2rem;
+    padding: 0;
+  
+    .app__footer-card {
+      min-width: 330px;
+   
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+  
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #fef4f5;
+    //   background-color: green;
+  
+      transition: all 0.3s ease-in-out;
+  
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 0 0.7rem;
+      }
+  
+      p {
+        font-weight: 500;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 500;
+      }
+      &:hover {
+        box-shadow: 0 0 25px #fef4f5;
+      }
+  
+      @media screen and (max-width: 450px) {
+        width: 100%;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  .app__footer-cards .app__footer-card:last-child {
+    background-color: #f2f7fb;
+  }
+  
+  .app__footer-cards .app__footer-card:last-child:hover {
+    box-shadow: 0 0 25px #f2f7fb;
+  }
+  
+  .app__footer-form {
+    width: 40%;
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+    // background-color: red;
+
+
+    width: 40%;
+    display: flex;
+    // justify-content: space-evenly;
+    // background-color: blue;
+    // align-items: center;
+    flex-wrap: wrap;
+    margin: 0em 0.5rem 2rem;
+    padding: 0;
+  
+    div {
+      width: 100%;
+      min-width: 330px;
+  
+      margin: 0.75rem 0;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: white;
+  
+      transition: all 0.3s ease-in-out;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.95rem;
+        border: none;
+        border-radius: 7px;
+        background-color: white;
+  
+        font-family: var(--font-base);
+        color: var(--secondary-color);
+        outline: none;
+      }
+  
+      textarea {
+        height: 170px;
+      }
+  
+      &:hover {
+        box-shadow: 0 0 25px var(--primary-color);
+      }
+    }
+  
+    button {
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--secondary-color);
+  
+      font-weight: 500;
+      color: var(--white-color);
+      outline: none;
+      margin: 2rem 0 0 0;
+      font-family: var(--font-base);
+  
+      transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #2430af;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
